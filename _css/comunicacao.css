@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    line-height: 1.5em;
+    font-size: 1em;
+}
+
+ul#comunicacao {
+    padding-bottom: 20px;
+    padding-top: 0px;
+}
+
+ul#comunicacao li {
+    text-align: justify-content;
+}
+
+ul#vantagens {
+    font-size: 13pt;
+    font-weight: bold;
+    line-height: 1.5em;
+    list-style: none;
+    padding-bottom: 25px;
+}
+
+ul#vantagens li {
+    font-weight: normal;
+}

@@ -1,0 +1,170 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Titillium+Web:wght@700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    text-align: justify-content;
+}
+
+header#cabecalho img#logo {
+    width: 15%;
+    float: left;
+    margin-top: -70px;
+}
+
+header#cabecalho {
+    width: 900px;
+    height: 120px;
+    background-color: #791e95;
+    margin: 100px auto 0px auto;
+}
+
+header#cabecalho h1 {
+	font-family: 'Roboto', sans-serif;
+    font-size: 35pt;
+    font-weight: bolder;
+    color: #ffffff;
+    padding: 20px 0px 0px 5px;
+    margin: 0px 0px 0px 10px;
+}
+
+header#cabecalho h2 {
+	font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    color: #ffffff;
+    padding: 0px 0px 20px 5px; /* sup dir inf esq */
+    margin: 0px 0px 0px 10px;
+}
+
+header#cabecalho h3 {
+	font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    color: #ffffff;
+    float: left;
+    display: flex;
+}
+
+section#conteudo {
+    width: 900px;
+    margin: 10px auto 0px auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+}
+
+ul#galeria {
+    width: 100%;
+    margin: 0,auto;
+    padding: 100px 0px 100px 0px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#galeria li {
+    float: left;
+    width: 250px;
+    height: 141px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffb926;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.4);
+    -webkit-transition: all .3s ease-in;
+}
+
+ul#galeria li span {
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(255,255,255,.3);
+    font-size: 6pt;
+    padding: 1px;
+    margin-top: 0px;
+    float: right;
+}
+
+ul#galeria li:hover {
+    -webkit-transform: scale(1.5);
+    border: 5px solid rgba(255,185,38,.4);
+}
+
+ul#galeria li:hover span {
+    opacity: 1;
+}
+
+ul#galeria li#grafico01 {
+    background: url('../_imagens/graficos_bairros.png') no-repeat;
+    background-position: 0% 0%;
+    background-size: 500px 300px;
+    background-color: rgba(255,185,38,.4);
+}
+
+ul#galeria li#grafico01:hover {
+    background-position: 0px 0px;
+    background-size: 250px 141px;
+}
+
+ul#galeria li#grafico02 {
+    background: url('../_imagens/graficos_feedback.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 500px 300px;
+    background-color: rgba(255,185,38,.4);
+}
+
+ul#galeria li#grafico02:hover {
+    background-position: 0px 0px;
+    background-size: 250px 141px;
+}
+
+ul#galeria li#grafico03 {
+    background: url('../_imagens/graficos_periodo.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 500px 300px;
+    background-color: rgba(255,185,38,.4);
+}
+
+ul#galeria li#grafico03:hover {
+    background-position: 0px 0px;
+    background-size: 250px 141px;
+}
+
+ul#galeria li#grafico04 {
+    background: url('../_imagens/graficos_staus.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 500px 300px;
+    background-color: rgba(255,185,38,.4);
+}
+
+ul#galeria li#grafico04:hover {
+    background-position: 0px 0px;
+    background-size: 250px 141px;
+}
+
+ul#galeria li#grafico05 {
+    background: url('../_imagens/graficos_tipo.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 500px 300px;
+    background-color: rgba(255,185,38,.4);
+}
+
+ul#galeria li#grafico05:hover {
+    background-position: 0px 0px;
+    background-size: 250px 141px;
+}
+
+ul#galeria li#grafico06 {
+    background: url('../_imagens/graficos_mapa.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 500px 300px;
+    background-color: rgba(255,185,38,.4);
+}
+
+ul#galeria li#grafico06:hover {
+    background-position: 0px 0px;
+    background-size: 250px 141px;
+}
+
+article h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13pt;
+    color: #791e95;
+}
