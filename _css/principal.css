@@ -71,6 +71,16 @@
     display: inline-block;
 }
 
+.menu {
+    width: 20vw;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    color: #838282;
+    line-height: 1.2em;
+}
+
 .enviar {
     font-family: var(--fonte2);
     background-color: #07B0F2;
@@ -125,4 +135,13 @@
         float: none;
         margin: 0px;
    }
+
+   .menu {
+    width: 60vw;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    line-height: 1.2em;
+    }
 }
