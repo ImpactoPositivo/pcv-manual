@@ -432,11 +432,13 @@ body{
 .home-section .content .topicos {
   font-size: 1.1rem;
   line-height: 1.5em;
+  margin-left: 15px;
+  padding-left: 20px;
 }
 
 .home-section .content .topicos ul li {
   list-style-position: outside;
-  padding-left: 20px;
+  margin-left: 15px;
 }
 
 .home-section .content .topicos ol li {
@@ -579,6 +581,26 @@ body{
 }
 
 .home-section .content .mobile figcaption h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10pt;
+  color: var(--cor7);
+  padding: 0px;
+  float: right;
+}
+
+.home-section .content .int-detail {
+  width: 120vw;
+  display: block;
+  margin: 20px 0px 40px 15px;  
+  position: relative;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+
+.home-section .content .int-detail img {
+  width: 100%;
+}
+
+.home-section .content .int-detail figcaption h4 {
   font-family: 'Roboto', sans-serif;
   font-size: 10pt;
   color: var(--cor7);
