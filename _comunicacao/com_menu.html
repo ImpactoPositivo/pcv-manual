@@ -1,78 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="shortcut icon" href="../_imagens/favicon.ico" type="image/x-icon">
-        <title>Prefeitura com você - Comunicação</title>
-        <script src="https://kit.fontawesome.com/316dcb45b5.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../_css/aside.css">
-        <link rel="stylesheet" href="../_css/principal.css">
-        <link rel="stylesheet" href="../_css/style.css">
-    </head>
-<body>
-	<header>		
-	    <figure>
-			<a href="../index.html"> <img id="logo" src="../_imagens/logo_horizontal.png"/></a>
-		</figure>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="../_imagens/favicon.ico" type="image/x-icon">
 
-		<div>
-			<h1>Comunicação Institucional</h1>
-			<p>Manual do Usuário - Menu</p>
-		</div>
-	</header>
-	<aside>
-        <section class="lado">
-            <h1>Itens de Menu</h1>
-            <ul class="menu">
-                <li><a href="../_textos/comunicacao.html">Voltar ao Menu Comunicação Ativa</a></li>
-            </ul>
-            <ul class="menu">
-                <li><a href="../index.html">Voltar ao Menu inicial</a></li>
-            </ul>
-        </section>
-    </aside>
-    <section class="principal">
-        <p>Na tela inicial, quando o aplicativo está sendo executado em laptop ou desktop, aparece a barra de menus à esquerda, se por outro lado o aplicativo estiver sendo executado em dispositivos móveis, o “Menu” será visto <clicando-se></clicando-se> no ícone (<i class="fa-solid fa-bars"></i>), localizado no canto superior direito. Ele é composto dos itens:</p>
-
-        <div class="menu">
-            <ul class="sum">
-                <li>Início</li>
-                <li>Contatos</li>
-                <li>Campanhas</li>
-                <li>Modelo de mensagem</li>
-                <li>Lista negra</li>
-                <li>Enquete</li>
-                <li>Panfleto</li>
-                    <ul class="sub">
-                        <li>Novo</li>
-                        <li>Cadastrados</li>
-                        <li>Publicar</li>
-                        <li>Visualizações</li>
-                    </ul>
-                 <li>SMS</li>
-                    <ul class="sub">
-                        <li>Rápido</li>
-                        <li>Marketing</li>
-                        <li>Aniversariantes</li>
-                        <li>Arquivo</li>
-                        <li>Agendados</li>
-                        <li>Enviados</li>
-                        <li>Recebidos</li>
-                    </ul>
-                <li>Fale Conosco</li>
-            </ul>
+    <title>Prefeitura.com.vc</title>
+    <script src="https://kit.fontawesome.com/316dcb45b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../_css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>   
+    <div class="sidebar">
+        <div class="logo_details">
+          <a href="../index.html"><img src="../_imagens/icone-pcv-branco.png" alt="Logo do Prefeitura.com.vc"></a>
+          <div class="logo_name">Prefeitura<Br>com.vc</div>
+          <i class="bx bx-menu" id="btn"></i>
+        </div>   
+        <ul class="nav-list">
+			<li>
+				<a href="../_textos/comunicacao.html">
+					<i class='bx bx-home' ></i>
+					<span class="link_name">Menu Comunicação</span>
+				</a>
+				<span class="tooltip">Menu Comunicação</span>
+			</li>
+			<li>
+				<a href="../index.html">
+					<i class='bx bxs-home' ></i>
+					<span class="link_name">Menu Principal</span>
+				</a>
+				<span class="tooltip">Menu Principal</span>
+			</li>
+        </ul>
+	</div>
+    <section class="home-section">
+        <div class="titulo">
+            <div class="elemento">
+                <h3>Manual de Operação</h3>
+                <h4>Menu "Comunicação ativa"</h4>
+            </div>
         </div>
+        <article class="content">
+            <p>Na tela inicial, quando o aplicativo está sendo executado em laptop ou desktop, aparece a barra de menus à esquerda, se por outro lado o aplicativo estiver sendo executado em dispositivos móveis, o “Menu” será visto <clicando-se></clicando-se> no ícone (<i class="fa-solid fa-bars"></i>), localizado no canto superior direito. Ele é composto dos itens:</p>
+            <div class="detail">
+                <figure class="fig-detail2">
+                    <img src="../_imagens/com_ini_menu.png">
+                    <h1>Menu Comunicação Ativa</h1>                    
+                </figure>
+                <ul class="topic-detail">
+                    <li>Início</li>
+                    <li>Contatos
+                        <ul class="sub-topic">
+                            <li>Grupos</li>
+                            <li>Novo</li>
+                            <li>Importar</li>
+                            <li>Cadastrados</li>
+                            <li>Grupos do contato</li>
+                            <li>Contatos do Grupo</li>
+                        </ul>
+                    </li>
+                    <li>Campanhas</li>
+                    <li>Modelo de mensagem</li>
+                    <li>Opt Out</li>
+                    <li>Enquete</li>
+                    <li>Panfleto
+                        <ul class="sub-topic">
+                            <li>Novo</li>
+                            <li>Cadastrados</li>
+                            <li>Publicar</li>
+                            <li>Visualizações</li>
+                        </ul>
+                    </li>
+                    <li>SMS
+                        <ul class="sub-topic">
+                            <li>Rápido</li>
+                            <li>Marketing</li>
+                            <li>Aniversariantes</li>
+                            <li>Arquivo</li>
+                            <li>Agendados</li>
+                            <li>Enviados</li>
+                            <li>Recebidos</li>
+                        </ul>
+                    </li>
+                    <li>Usuários
+                        <ul class="sub-topic">
+                            <li>Novo</li>
+                            <li>Cadastrados</li>
+                            <li>Transferência</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </article>
     </section>
+    <!-- Scripts -->
+    <script src="../_js/script.js"></script>
+
     <footer>
         <div class="container-footer">
-            <div class="row-footer">
+            <div class="row-footer">-->
                 <!-- footer col -->
                 <div class="footer-col">
                     <h4>Selo de Qualidade</h4>
 
                     <figure>
-                        <img src="../_imagens/impacto-logo-branco.png" alt="">
+                        <img src="../_imagens/impacto-logo-preto.png" alt="">
                     </figure>
 
                 </div>
@@ -113,7 +147,7 @@
                 <!--end footer-col-->
             </div>
         </div>
-    </footer> 
-    
+    </footer>      
+   
 </body>
 </html>

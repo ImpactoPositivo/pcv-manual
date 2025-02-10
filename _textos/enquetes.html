@@ -1,195 +1,312 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link rel="shortcut icon" href="../_imagens/favicon.ico" type="image/x-icon">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="../_imagens/favicon.ico" type="image/x-icon">
 
-        <title>Prefeitura.com.vc - Consultas Populares</title>
-        <script src="https://kit.fontawesome.com/316dcb45b5.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../_css/style.css">
-        <link rel="stylesheet" href="../_css/aside.css">
-        <link rel="stylesheet" href="../_css/principal.css">
+    <title>Prefeitura.com.vc</title>
+    <script src="https://kit.fontawesome.com/316dcb45b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../_css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>   
+    <div class="sidebar">
+        <div class="logo_details">
+          <a href="../index.html"><img src="../_imagens/icone-pcv-branco.png" alt="Logo do Prefeitura.com.vc"></a>
+          <div class="logo_name">Prefeitura<Br>com.vc</div>
+          <i class="bx bx-menu" id="btn"></i>
+        </div>   
+        <ul class="nav-list">
+          <li>
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Buscar...">
+            <span class="tooltip">Pesquisa</span>
+          </li>
+          <li>
+            <a href="intro.html">
+              <i class='bx bx-info-square'></i>
+              <span class="link_name">Introdução</span>
+            </a>
+            <span class="tooltip">Introdução</span>
+          </li>
+          <li>
+            <a href="modulos.html">
+                <i class='bx bx-customize'></i>
+                <span class="link_name">Módulos</span>
+            </a>
+            <span class="tooltip">Módulos</span>
+          </li>
+          <li>
+            <a href="acesso.html">
+              <i class='bx bxs-key'></i>
+              <span class="link_name">Acesso</span>              
+            </a>
+            <span class="tooltip">Acesso</span>
 
-    </head>
-    <body>
-        <header>
-            <figure>
-                <a href="../index.html"> <img id="logo" src="../_imagens/logo_horizontal.png"/> </a>
-            </figure>
-            <div>
-                <h1>Prefeitura.com.vc <span>- Manual do Usuário</h1>
-                <p>Consultas Populares</p>
+        <li>
+            <a href="alteracao_senha.html">
+                <i class='bx bx-dialpad-alt'></i>
+                <span class="link_name">Alterar</span>
+            </a>
+            <span class="tooltip">Alterar</span>
+        </li>
+        <li>
+            <a href="recuperacao_senha.html">                
+                <i class='bx bx-refresh'></i>
+                <span class="link_name">Recuperar</span>
+            </a>
+            <span class="tooltip">Recuperar</span>
+        </li>
+        <li>
+            <a href="dashboard.html">
+                <i class='bx bxs-dashboard' ></i>
+                <span class="link_name">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+            <a href="regional.html">
+              <i class='bx bx-building-house'></i>
+                <span class="link_name">Regionais</span>
+            </a>
+            <span class="tooltip">Regionais</span>
+        </li>
+        <li>
+            <a href="departamento.html">
+              <i class='bx bx-building' ></i>
+                <span class="link_name">Departamentos</span>
+            </a>
+            <span class="tooltip">Departamentos</span>
+        </li>
+        <li>
+            <a href="setor.html">
+              <i class='bx bx-home-alt-2'></i>
+                <span class="link_name">Setores</span>
+            </a>
+            <span class="tooltip">Setores</span>
+        </li>
+        <li>
+            <a href="servidor.html">
+              <i class='bx bx-group'></i>
+                <span class="link_name">Encarregados</span>
+            </a>
+            <span class="tooltip">Encarregados</span>
+        </li>
+
+        <li>
+            <a href="vinculando_colaborador.html">
+              <i class='bx bx-link'></i>
+                <span class="link_name">Vincular</span>
+            </a>
+            <span class="tooltip">Vincular</span>
+        </li>
+        <li>
+            <a href="sugestoes.html">
+                <i class='bx bxs-hand'></i>
+                <span class="link_name">Sugestões</span>
+            </a>
+            <span class="tooltip">Sugestões</span>
+        </li>
+          <li>
+            <a href="respostas.html">
+              <i class='bx bxs-comment-dots' ></i>
+              <span class="link_name">Respostas</span>
+            </a>
+            <span class="tooltip">Respostas</span>
+          </li>
+          <li>
+            <a href="visualizando.html">
+              <i class='bx bxl-blender'></i>
+              <span class="link_name">Visualizando</span>
+            </a>
+            <span class="tooltip">Visualizando</span>
+          </li>
+          <li>
+            <a href="atendendo.html">
+              <i class='bx bx-hard-hat'></i>
+              <span class="link_name">Atendendo</span>
+            </a>
+            <span class="tooltip">Atendendo</span>
+          </li>
+          <li>
+            <a href="qualificacao.html">
+              <i class='bx bx-bar-chart-alt-2'></i>
+              <span class="link_name">Qualificações</span>
+            </a>
+            <span class="tooltip">Qualificações</span>
+          </li>
+          <li>
+            <a href="monitorando.html">
+              <i class='bx bxs-binoculars'></i>
+              <span class="link_name">Gerenciando</span>
+            </a>
+            <span class="tooltip">Gerenciando</span>
+          </li>
+          <li>
+            <a href="enquetes.html">
+              <i class='bx bxs-spreadsheet'></i>
+              <span class="link_name">Enquetes</span>
+            </a>
+            <span class="tooltip">Enquetes</span>
+          </li>
+          <li>
+            <a href="comunicacao.html">
+              <i class='bx bx-chat'></i>
+              <span class="link_name">Comunicação</span>
+            </a>
+            <span class="tooltip">Comunicação</span>
+          </li>
+        </ul>
+      </div>
+    <section class="home-section">
+        <div class="titulo">
+            <div class="elemento">
+                <h3>Manual de Operação</h3>
+                <h4>Criando e publicando Enquetes</h4>
             </div>
-        </header>
-
-        <aside>
-            <section class="lado">
-                <h1>Sub itens</h1>
-				<ul class="sum">
-					<li><a href="enquetes.html">Consultas Populares</a>
-						<ul class="sub">
-							<li><a href="#item1">Grupos de Pesquisas</a></li>
-							<li><a href="#item2">Perguntas</a></li>
-							<li><a href="#item3">Respostas</a></li>
-							<li><a href="#item4">Respostas das perguntas</a></li>
-							<li><a href="#item5">Resultados</a></li>		
-						</ul>
-					</li>
-				</ul>
-				<ul class="menu">
-					<li><a href="../index.html">Voltar ao Menu inicial</a></li>
-				</ul>
-            </section>
-        </aside>
-
-        <section class="principal">
+        </div>
+        <article class="content">
                 <h1>Consultas Populares</h1>
-
-                <p>A funcionalidade “Enquete” permite ao Grupo Gestor da Prefeitura fazer a qualquer tempo pesquisas de opinião, utilizando o aplicativo para os cidadãos responderem.</p>
-                
-                <p>Quando do cadastramento dos Departamentos (Nível 2), é permitido ao Grupo Gestor autorizar ou não cada uma das unidades a fazer pesquisas de forma autônoma. Entretanto, a alternativa mais comum é permitir somente que o Grupo Gestor faça as pesquisas de forma coordenada com cada unidade, evitando assim que o cidadão receba perguntas em excesso, ou mesmo com conteúdo redundantes.</p>
-                
-                <p>Os Departamentos (Nível 2), portanto, quando não estão autorizadas a fazer as suas próprias pesquisas apenas visualizam no menu enquete o item resultado destinado a mostrar enquetes geradas pelo Grupo Gestor sobre serviços ou com conteúdo do interesse daquela unidade.</p>
+                    <p>A funcionalidade “Enquete” permite ao Grupo Gestor da Prefeitura fazer a qualquer tempo pesquisas de opinião, utilizando o aplicativo para os cidadãos responderem.</p>
+                    
+                    <p>Quando do cadastramento dos Departamentos (Nível 2), é permitido ao Grupo Gestor autorizar ou não cada uma das unidades a fazer pesquisas de forma autônoma. Entretanto, a alternativa mais comum é permitir somente que o Grupo Gestor faça as pesquisas de forma coordenada com cada unidade, evitando assim que o cidadão receba perguntas em excesso, ou mesmo com conteúdo redundantes.</p>
+                    
+                    <p>Os Departamentos (Nível 2), portanto, quando não estão autorizadas a fazer as suas próprias pesquisas apenas visualizam no menu enquete o item resultado destinado a mostrar enquetes geradas pelo Grupo Gestor sobre serviços ou com conteúdo do interesse daquela unidade.</p>
 
                 <article id="item1">
                         
-                    <h2>Grupos de Pesquisa</h2>
+                    <h1>Grupos de Pesquisa</h1>
+                        <p>Para fins de organização, as pesquisas serão separadas por grupos de pesquisas, que foram criados para agrupar pesquisas com características semelhantes, seja pelo conteúdo da enquete, seja pela secretaria pesquisada, etc.</p>
 
-                    <p>Para fins de organização, as pesquisas serão separadas por grupos de pesquisas, que foram criados para agrupar pesquisas com características semelhantes, seja pelo conteúdo da enquete, seja pela secretaria pesquisada, etc.</p>
+                        <p>Desta forma a primeira coisa a ser criada, antes mesmo de se pensar em uma pergunta é criar um ou mais grupos de pesquisa.</p>
 
-                    <p>Desta forma a primeira coisa a ser criada, antes mesmo de se pensar em uma pergunta é criar um ou mais grupos de pesquisa.</p>
-
-                    <figure class="tela">
-                        <img src="../_imagens/enquete_grupo.png">
+                        <figure class="tela">
+                            <img src="../_imagens/enquete_grupo.png">
+                            
+                            <figcaption>
+                                <h4>Tela para cadastro de Grupo de Pesquisa</h4>
+                            </figcaption>
+                        </figure>
                         
-                        <figcaption>
-                            <h4>Tela para cadastro de Grupo de Pesquisa</h4>
-                        </figcaption>
-                    </figure>
-                    
-                    <p>Para criar um Grupo de Pesquisa, basta clicar no menu "Enquete", seguido do sub-menu "Grupo de Pesquisa, clicar no botão magenta, canto inferior direito da tela e botão verde, que aparece posterioremente, conforme figura.</p>
+                        <p>Para criar um Grupo de Pesquisa, basta clicar no menu "Enquete", seguido do sub-menu "Grupo de Pesquisa, clicar no botão magenta, canto inferior direito da tela e botão verde, que aparece posterioremente, conforme figura.</p>
 
-                    <p>Informe apenas o nome do Grupo de Pesquisa, selecione a opção ATIVO ou INATIVO, para o grupo adquirir aquela condição, conforme sua necessidade e finalmente clique no botão <span class="enviar">ENVIAR<i class="fa-solid fa-angles-right"></i></span> para gravar o Grupo de Pesquisa que vo}ê está criando.</p>
-                        
+                        <p>Informe apenas o nome do Grupo de Pesquisa, selecione a opção ATIVO ou INATIVO, para o grupo adquirir aquela condição, conforme sua necessidade e finalmente clique no botão <span class="btn-default">ENVIAR<i class="fa-solid fa-angles-right"></i></span> para gravar o Grupo de Pesquisa que vo}ê está criando.</p>                       
                 </article>
 
                 <article id="item2">
-                    <h2>Perguntas</h2>
+                    <h1>Perguntas</h1>
+                        <p>A funcionalidade "Perguntas" foi idealizada para dar total flexibilidade e riqueza de opções para as consultas feitas à população.</p>
 
-                    <p>A funcionalidade "Perguntas" foi idealizada para dar total flexibilidade e riqueza de opções para as consultas feitas à população.</p>
+                        <figure class="tela">
+                            <img src="../_imagens/enquete_pergunta.png">
+                            
+                            <figcaption>
+                                <h4>Tela para cadastro de enquetes</h4>
+                            </figcaption>
+                        </figure>
 
-                    <figure class="tela">
-                        <img src="../_imagens/enquete_pergunta.png">
-                        
-                        <figcaption>
-                            <h4>Tela para cadastro de enquetes</h4>
-                        </figcaption>
-                    </figure>
+                        <p>O primeiro passo para se criar uma pergunta é escolher a abrangência geográfica da mesma e ai a ferramenta prefeitura.com.vc permite que sejam escolhidos todos os bairros da cidade <span class="circle">&#10102;</span> ao clicar na caixa de seleção [check box] ao lado da expressão “para tosos os bairros do município”, ou   bairro a bairro <span class="circle">&#10103;</span>; - ao clicar-se na caixa de seleção ao lado da expressão “bairro”, através de uma lista de todos os bairros que abrigam cidadãos que já baixaram o aplicativo para dispositivos móveis.</p>
 
-                    <p>O primeiro passo para se criar uma pergunta é escolher a abrangência geográfica da mesma e ai a ferramenta prefeitura.com.vc permite que sejam escolhidos todos os bairros da cidade <span class="circle">&#10102;</span> ao clicar na caixa de seleção [check box] ao lado da expressão “para tosos os bairros do município”, ou   bairro a bairro <span class="circle">&#10103;</span>; - ao clicar-se na caixa de seleção ao lado da expressão “bairro”, através de uma lista de todos os bairros que abrigam cidadãos que já baixaram o aplicativo para dispositivos móveis.</p>
+                        <p>O segundo passo é escolher, se do interesse dos gestores, um Departamento (Nível 2) <span class="circle">&#10104;</span>; para receber os resultados quando das respostas dos cidadãos.</p>                  
 
-                    <p>O segundo passo é escolher, se do interesse dos gestores, um Departamento (Nível 2) <span class="circle">&#10104;</span>; para receber os resultados quando das respostas dos cidadãos.</p>                  
+                        <p>Depois disso é solicitado no item “NOME” um título para a pesquisa <span class="circle">&#10105;</span>, que servirá para a mesma ser localizada na lista de enquetes criadas pela municipalidade.</p>
 
-                    <p>Depois disso é solicitado no item “NOME” um título para a pesquisa <span class="circle">&#10105;</span>, que servirá para a mesma ser localizada na lista de enquetes criadas pela municipalidade.</p>
+                        <p>Logo abaixo no item “Descrição” se insere a pergunta propriamente dita <span class="circle">&#10106;</span>, isto é, a consulta que vai aparecer no celular para o cidadão responder.</p>
 
-                    <p>Logo abaixo no item “Descrição” se insere a pergunta propriamente dita <span class="circle">&#10106;</span>, isto é, a consulta que vai aparecer no celular para o cidadão responder.</p>
+                        <p>Duas caixas de seleção você deverá marcar logo abaixo <span class="circle">&#10107;</span>:</p>
+                            
+                        <p>A primeira, cujo campo se chama “Múltipla Escolha”, serve para informar quantas respostas o cidadão pode escolher, se apenas uma opção, ou se o munícipe pode escoloher mais que uma opção.</p>
 
-                    <p>Duas caixas de seleção você deverá marcar logo abaixo <span class="circle">&#10107;</span>:</p>
-                        
-                    <p>A primeira, cujo campo se chama “Múltipla Escolha”, serve para informar quantas respostas o cidadão pode escolher, se apenas uma opção, ou se o munícipe pode escoloher mais que uma opção.</p>
+                        <p>A segunda, ativa ou inativa a enquete a qualquer tempo, no caso de ser necessário tirar aquela consulta do ar antes do prazo determinado para o término.</p>
 
-                    <p>A segunda, ativa ou inativa a enquete a qualquer tempo, no caso de ser necessário tirar aquela consulta do ar antes do prazo determinado para o término.</p>
+                        <p>Logo abaixo <span class="circle">&#10108;</span>, são cadastradas as datas de início e término da consulta à população e, finalmente, escolhe-se na caixa de seleção o Grupo de pesquisa <span class="circle">&#10109;</span> ao qual fará parte aquela enquete particularmente.</p>
 
-                    <p>Logo abaixo <span class="circle">&#10108;</span>, são cadastradas as datas de início e término da consulta à população e, finalmente, escolhe-se na caixa de seleção o Grupo de pesquisa <span class="circle">&#10109;</span> ao qual fará parte aquela enquete particularmente.</p>
-
-                    <p>Ao clicar <span class="enviar">ENVIAR<i class="fa-solid fa-angles-right"></i></span>, os cidadãos das regiões selecionadas recebem a enquete imediatamente, juntamente com uma notificação no celular para alertá-los da consulta.</p>
+                        <p>Ao clicar <span class="btn-default">ENVIAR<i class="fa-solid fa-angles-right"></i></span>, os cidadãos das regiões selecionadas recebem a enquete imediatamente, juntamente com uma notificação no celular para alertá-los da consulta.</p>
                 </article>
 
                 <article id="item3">
-                    <h2>Respostas</h2>
+                    <h1>Respostas</h1>
+                        <p>No menu respostas são inseridas cada opção de resposta de todas as enquetes criadas na Plataforma de Governança Colaborativa prefeitura.com.vc.</p>
 
-                    <p>No menu respostas são inseridas cada opção de resposta de todas as enquetes criadas na Plataforma de Governança Colaborativa prefeitura.com.vc.</p>
+        
+                        <p>A ideia é agrupar todas as respostas nesse menu para que elas possam ser reutilizadas, quando necessário.</p>
 
-    
-                    <p>A ideia é agrupar todas as respostas nesse menu para que elas possam ser reutilizadas, quando necessário.</p>
+                        <figure class="tela">
+                            <img src="../_imagens/enquete_resposta.png">
+                            
+                            <figcaption>
+                                <h4>Tela para cadastro de respostas</h4>
+                            </figcaption>
+                        </figure>
 
-                    <figure class="tela">
-                        <img src="../_imagens/enquete_resposta.png">
-                        
-                        <figcaption>
-                            <h4>Tela para cadastro de respostas</h4>
-                        </figcaption>
-                    </figure>
+                        <p>Para cadastrar uma resposta nova, segue-se o mesmo procedimento padrão de inserção de todo novo item na ferramenta, clica-se no botão vermelho, no canto interior direito, escolhe-se o botão verde, com um sinal de “+” e abre-se o formulário de inserção de nova resposta.</p>
 
-                    <p>Para cadastrar uma resposta nova, segue-se o mesmo procedimento padrão de inserção de todo novo item na ferramenta, clica-se no botão vermelho, no canto interior direito, escolhe-se o botão verde, com um sinal de “+” e abre-se o formulário de inserção de nova resposta.</p>
+                        <p>Para Inserir a resposta, escolha um dos departamentos Cadastrados, insira no campo "Descrição" o conteúdo da resposta, isto é, o valor que ficará em uma das opções da enquete que aparecerá no celular do cidadão.</p>
 
-                    <p>Para Inserir a resposta, escolha um dos departamentos Cadastrados, insira no campo "Descrição" o conteúdo da resposta, isto é, o valor que ficará em uma das opções da enquete que aparecerá no celular do cidadão.</p>
-
-                    <p>Para gravar o conteúdo da opção clique no botão <span class="enviar">ENVIAR<i class="fa-solid fa-angles-right"></i></span> e sua resposta será salva.</p>
+                        <p>Para gravar o conteúdo da opção clique no botão <span class="btn-default">ENVIAR<i class="fa-solid fa-angles-right"></i></span> e sua resposta será salva.</p>
                 </article>
 
                 <article id="item4">
-                    <h2>Resposta da Pergunta</h2>
+                    <h1>Resposta da Pergunta</h1>
+                        <p>Essa funcionalidade tem o objetivo de vincular todas as respostas que o cidadão terá no rol de escolha dele para uma dada enquete a determinada pergunta.</p>
 
-                    <p>Essa funcionalidade tem o objetivo de vincular todas as respostas que o cidadão terá no rol de escolha dele para uma dada enquete a determinada pergunta.</p>
+                        <p>Para concluir esse procedimento, basta escolher a pergunta pelo nome dado a mesma, abrir a caixa de seleção que listará todos os itens de respostas cadastradas, escolher o primeiro dos itens que deverá figurar para o cidadão como opção de resposta. Clique no botão <span class="btn-default">ADICIONAR +</span> para inserir o item. Repita a operação para completar a adição de todas as opções daquela determinada enquete.</p>
 
-                    <p>Para concluir esse procedimento, basta escolher a pergunta pelo nome dado a mesma, abrir a caixa de seleção que listará todos os itens de respostas cadastradas, escolher o primeiro dos itens que deverá figurar para o cidadão como opção de resposta. Clique no botão <span class="enviar">ADICIONAR +</span> para inserir o item. Repita a operação para completar a adição de todas as opções daquela determinada enquete.</p>
+                        <p>A operação similar é a remoção de um dado item de resposta. Se for necessário mudar a configuração da enquete, retirando uma opção de escolha, selecione a opção já cadastrada na mesma tela, clicando na caixa de check até ficar com o sintal de "<span class="tik">&#10003;</span>",conforme assinalado.</p>
 
-                    <p>A operação similar é a remoção de um dado item de resposta. Se for necessário mudar a configuração da enquete, retirando uma opção de escolha, selecione a opção já cadastrada na mesma tela, clicando na caixa de check até ficar com o sintal de "<span class="tik">&#10003;</span>",conforme assinalado.</p>
+                        <figure class="tela">
+                            <img src="../_imagens/enquete_remover.png">
+                            
+                            <figcaption>
+                                <h4>Tela para remover itens de resposta</h4>
+                            </figcaption>
+                        </figure>
 
-                    <figure class="tela">
-                        <img src="../_imagens/enquete_remover.png">
-                        
-                        <figcaption>
-                            <h4>Tela para remover itens de resposta</h4>
-                        </figcaption>
-                    </figure>
-
-                    <p>Clique no botão <span class="remover">REMOVER X</span> para retirar o item. Repita a operação para remover tantas opções de resposta daquela determinada enquete quantas necessárias.</p>
+                        <p>Clique no botão <span class="btn-red">REMOVER X</span> para retirar o item. Repita a operação para remover tantas opções de resposta daquela determinada enquete quantas necessárias.</p>
                 </article>
 
                 <article id="item5">
-                    <h2>Resultado</h2>
+                    <h1>Resultado</h1>
+                        <p>No menu “Resultado” os gestores do Grupo Gestor (Nível 1), bem como os dos Departamentos (Nível 2) autorizados enxergam os gráficos do resultado da participação popular nas enquetes.</p>
 
-                    <p>No menu “Resultado” os gestores do Grupo Gestor (Nível 1), bem como os dos Departamentos (Nível 2) autorizados enxergam os gráficos do resultado da participação popular nas enquetes.</p>
+                        <p>Os resultados são apresentados em gráficos de pizza ou gráficos de barra dependendo da escolha do Gestor e originalmente os dados são mostrado de toda a área de abrangência escolhida.</p>
 
-                    <p>Os resultados são apresentados em gráficos de pizza ou gráficos de barra dependendo da escolha do Gestor e originalmente os dados são mostrado de toda a área de abrangência escolhida.</p>
+                        <figure class="tela">
+                            <img src="../_imagens/enquete_resultado.png">
+                            
+                            <figcaption>
+                                <h4>Resultado da Enquete em Gráfico de Pizza</h4>
+                            </figcaption>
+                        </figure>  
 
-                    <figure class="tela">
-                        <img src="../_imagens/enquete_resultado.png">
-                        
-                        <figcaption>
-                            <h4>Resultado da Enquete em Gráfico de Pizza</h4>
-                        </figcaption>
-                    </figure>  
+                        <p>Clicando-se na caixa de seleção “Todos os bairros”, abre-se uma lista dos bairros consultados e o gestor pode visualizar o resultado da pesquisa bairro a bairro. </p>
 
-                    <p>Clicando-se na caixa de seleção “Todos os bairros”, abre-se uma lista dos bairros consultados e o gestor pode visualizar o resultado da pesquisa bairro a bairro. </p>
+                        <p>Além disso, os Gestores tem a sua disposição nessa tela 4 tipos de relatórios listando informações relevantes de cada consulta realizada, conforme mostrado na figura abaixo:</p>
 
-                    <p>Além disso, os Gestores tem a sua disposição nessa tela 4 tipos de relatórios listando informações relevantes de cada consulta realizada, conforme mostrado na figura abaixo:</p>
-
-                    <figure class="tela">
-                        <img src="../_imagens/enquete_relatorio.png">
-                        
-                        <figcaption>
-                            <h4>Relatórios disponíveis relativos a resultados de Enquetes</h4>
-                        </figcaption>
-                    </figure>  
-
-
+                        <figure class="tela">
+                            <img src="../_imagens/enquete_relatorio.png">
+                            
+                            <figcaption>
+                                <h4>Relatórios disponíveis relativos a resultados de Enquetes</h4>
+                            </figcaption>
+                        </figure>
                 </article>
-                        
+            </article>
         </section>
+        <!-- Scripts -->
+        <script src="../_js/script.js"></script>
+    
         <footer>
             <div class="container-footer">
-                <div class="row-footer">
+                <div class="row-footer">-->
                     <!-- footer col -->
                     <div class="footer-col">
                         <h4>Selo de Qualidade</h4>
     
                         <figure>
-                            <img src="../_imagens/impacto-logo-branco.png" alt="">
+                            <img src="../_imagens/impacto-logo-preto.png" alt="">
                         </figure>
     
                     </div>
@@ -230,7 +347,7 @@
                     <!--end footer-col-->
                 </div>
             </div>
-        </footer>      >
         </footer>      
+       
     </body>
-</html>
+    </html>
