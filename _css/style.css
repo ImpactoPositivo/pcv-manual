@@ -51,7 +51,7 @@ body{
 
 .sidebar{
   height: 100vh;
-  width: 75px;
+  width: 70px;
   padding: 6px 14px;
   z-index: 99;
   background-color: var(--cor11);
@@ -79,6 +79,7 @@ body{
 .sidebar .logo_details >a img{
   height: 40px;
   opacity: 0;
+  
   transition: all 0.5s ease ;
 }
 
@@ -106,7 +107,7 @@ body{
   text-align: center;
   cursor: pointer;
   transition: all .5s ease;
-  padding-right: 15px;
+  padding-right: 25px;
 }
 
 .sidebar.open .logo_details #btn{
@@ -292,8 +293,6 @@ body{
   border-radius: 5px;
 }
 
-
-
 .sidebar .logo_details a img{
   height: 45px;
   width: 45px;
@@ -331,8 +330,8 @@ body{
   background-color: var(--color-light);
   min-height: 100vh;
   top:0;
-  left:75px;
-  width: calc(100% - 75px);
+  left:70px;
+  width: calc(100% - 70px);
   transition: all .5s ease;
   z-index: 2;
   padding-bottom: 0px;
@@ -391,7 +390,7 @@ body{
 .home-section .content {
   color: var(--color-black);
   line-height: 1.5rem;
-  padding: 0px 20px 20px 20px;
+  padding: 0px 1% 1% 1%;
 }
 
 .home-section .content h1 {
@@ -650,7 +649,7 @@ body{
 }
 
 .home-section .content .detail .fig-detail2 >img{
-  height: 75vh;
+  height: 70vh;
   padding: 20px 20px 0px 20px;
 }
 
@@ -738,7 +737,6 @@ footer {
   bottom: auto;
   padding: 5px 0;
   clear: both;
-
 }
 
 .container-footer {
@@ -760,7 +758,7 @@ footer {
 }
 
 .footer-col img{
-  width: 60%;
+  width: 70%;
 }
 
 .footer-col h4{
@@ -893,6 +891,20 @@ footer {
     font-size: 1.2rem;
   }
   .home-section .content .obs >p{
+    font-size: 1.0rem;
+  }
+}
+
+@media (max-width: 452px){
+  .home-section .titulo .elemento >h3{
+    font-size: 1.1rem;
+  }
+
+  .home-section .elemento >h4{
+    font-size: 1.3rem;
+  }
+
+  .home-section .content >h3{
     font-size: 1.0rem;
   }
 }
